@@ -609,39 +609,50 @@ Show #$nonmf %D1
 #------------------------------------
 # UNCOMMENT THIS SCRIPT TO MAKE IT WORK (remove the # in front of the next 7 lines)
 
-#Show #$animate
-#	Class "One Hand" "Two Hand" "Staves" "Daggers" "Thrusting" "Sceptres" "Claws"
-#	Rarity Normal
-#	SetBackgroundColor 0 0 0 255
-#	SetTextColor 150 0 0 255
-#	SetBorderColor 150 0 0 255
-#	SetFontSize 20
+Show #$animate
+Class "One Hand" "Two Hand" "Staves" "Daggers" "Thrusting" "Sceptres" "Claws"
+Rarity Normal
+SetBackgroundColor 0 0 0 255
+SetTextColor 150 0 0 255
+SetBorderColor 150 0 0 255
+SetFontSize 20
 
-#Show #$animate, ranged
-#	Class "Bows" "Wands"
-#	Rarity Normal
-#	SetBackgroundColor 0 0 0 255
-#	SetTextColor 150 0 0 255
-#	SetBorderColor 150 0 0 255
-#	SetFontSize 20
+Show #$animate, ranged
+Class "Bows" "Wands"
+Rarity Normal
+SetBackgroundColor 0 0 0 255
+SetTextColor 30 144 255 255
+SetBorderColor 30 144 255 255
+SetFontSize 50
 
-#Show #$animate, identified
-#	Class "One Hand" "Two Hand" "Staves" "Daggers" "Thrusting" "Sceptres" "Claws"
-#	Rarity Magic
-#	SetBackgroundColor 0 0 0 255
-#	SetTextColor 150 0 0 255
-#	SetBorderColor 150 0 0 255
-#	SetFontSize 20
-#	Identified True
+Show #$animate, identified
+Class "One Hand" "Two Hand" "Staves" "Daggers" "Thrusting" "Sceptres" "Claws"
+Rarity Magic
+SetBackgroundColor 0 0 0 255
+SetTextColor 150 0 0 255
+SetBorderColor 150 0 0 255
+SetFontSize 20
+Identified True
 
-#Show #$animate, identified, ranged
-#	Class "Bows" "Wands"
-#	Rarity Magic
-#	SetBackgroundColor 0 0 0 255
-#	SetTextColor 150 0 0 255
-#	SetBorderColor 150 0 0 255
-#	SetFontSize 20
-#	Identified True
+Next go to the top of the filter on the first line copy and paste this:
+
+Show #$animate, identified, ranged
+Class "Bows" "Wands"
+Rarity Magic
+SetBackgroundColor 0 0 0 255
+SetTextColor 30 144 255 255
+SetBorderColor 30 144 255 255
+SetFontSize 50
+Identified True
+
+Show
+Class "Wands"
+Rarity Magic
+SetBackgroundColor 0 0 0 255
+SetTextColor 255 105 180
+SetBorderColor 255 105 180
+SetFontSize 50
+Identified False
 
 #------------------------------------
 #   [0218] W-soc offhand weapons
